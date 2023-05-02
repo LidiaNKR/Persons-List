@@ -47,12 +47,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F820C26D2A014A7800082897 /* Model */ = {
+		F820C26D2A014A7800082897 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F820C26E2A014A8B00082897 /* Person.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F820C2702A014AB800082897 /* Services */ = {
@@ -61,6 +61,44 @@
 				F820C2712A014ACA00082897 /* DataManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F820C2772A0158D000082897 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F883D0A425DC145F00B417D2 /* PersonListTableViewController.swift */,
+				F883D0BB25DC2EB000B417D2 /* SectionTableViewController.swift */,
+				F820C2732A014B5000082897 /* TabBarViewController.swift */,
+				F820C2752A014B7800082897 /* PersonDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F820C2782A01593A00082897 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F883D0A025DC145F00B417D2 /* AppDelegate.swift */,
+				F883D0A225DC145F00B417D2 /* SceneDelegate.swift */,
+				F883D0AE25DC146000B417D2 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F820C2792A01595700082897 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F883D0A625DC145F00B417D2 /* Main.storyboard */,
+				F883D0AB25DC146000B417D2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F820C27A2A01596700082897 /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
+				F883D0A925DC146000B417D2 /* Assets.xcassets */,
+			);
+			path = Sourse;
 			sourceTree = "<group>";
 		};
 		F883D09425DC145F00B417D2 = {
@@ -82,18 +120,12 @@
 		F883D09F25DC145F00B417D2 /* Persons List */ = {
 			isa = PBXGroup;
 			children = (
+				F820C27A2A01596700082897 /* Sourse */,
+				F820C2792A01595700082897 /* Storyboards */,
+				F820C2782A01593A00082897 /* SupportingFiles */,
+				F820C2772A0158D000082897 /* ViewControllers */,
 				F820C2702A014AB800082897 /* Services */,
-				F820C26D2A014A7800082897 /* Model */,
-				F883D0A025DC145F00B417D2 /* AppDelegate.swift */,
-				F883D0A225DC145F00B417D2 /* SceneDelegate.swift */,
-				F883D0A425DC145F00B417D2 /* PersonListTableViewController.swift */,
-				F883D0BB25DC2EB000B417D2 /* SectionTableViewController.swift */,
-				F820C2732A014B5000082897 /* TabBarViewController.swift */,
-				F820C2752A014B7800082897 /* PersonDetailViewController.swift */,
-				F883D0A625DC145F00B417D2 /* Main.storyboard */,
-				F883D0A925DC146000B417D2 /* Assets.xcassets */,
-				F883D0AB25DC146000B417D2 /* LaunchScreen.storyboard */,
-				F883D0AE25DC146000B417D2 /* Info.plist */,
+				F820C26D2A014A7800082897 /* Models */,
 			);
 			path = "Persons List";
 			sourceTree = "<group>";

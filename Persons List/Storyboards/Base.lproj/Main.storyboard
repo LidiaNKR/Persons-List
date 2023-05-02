@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="67" y="-345"/>
         </scene>
-        <!--Cell-->
+        <!--Cells-->
         <scene sceneID="Ieh-48-lK3">
             <objects>
                 <tableViewController id="EJa-q5-BTK" customClass="PersonListTableViewController" customModule="Persons_List" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="DI1-zF-Irz" kind="show" trigger="accessoryAction" id="b2w-xz-7ax"/>
+                                    <segue destination="DI1-zF-Irz" kind="show" id="2Ya-DM-yd1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -70,7 +70,7 @@
                             <outlet property="delegate" destination="EJa-q5-BTK" id="46A-Ni-3Nu"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Cell" image="person.circle" catalog="system" id="iAS-GS-qFT"/>
+                    <tabBarItem key="tabBarItem" title="Cells" image="person.circle" catalog="system" id="iAS-GS-qFT"/>
                     <navigationItem key="navigationItem" id="Xvx-1a-mTz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="865" y="-599"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Detail View Controller-->
         <scene sceneID="2jv-96-eaY">
             <objects>
-                <viewController id="DI1-zF-Irz" sceneMemberID="viewController">
+                <viewController id="DI1-zF-Irz" customClass="PersonDetailViewController" customModule="Persons_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qqt-UK-fbb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,12 +113,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H0s-Ag-6Xi"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="PS7-kJ-P1P" id="zql-qo-DZk"/>
+                        <outlet property="phoneNumberLabel" destination="l6P-Uz-ff6" id="Wet-Xm-eCq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzN-PD-mNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1600.0000000000002" y="-599.33035714285711"/>
         </scene>
-        <!--Section-->
+        <!--Sections-->
         <scene sceneID="cjf-sI-JwX">
             <objects>
                 <tableViewController id="w03-CS-Qc6" customClass="SectionTableViewController" customModule="Persons_List" sceneMemberID="viewController">
@@ -142,7 +146,7 @@
                             <outlet property="delegate" destination="w03-CS-Qc6" id="gbg-0B-Ngt"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Section" image="person.circle" catalog="system" id="yp9-bj-ThX"/>
+                    <tabBarItem key="tabBarItem" title="Sections" image="person.circle" catalog="system" id="yp9-bj-ThX"/>
                     <navigationItem key="navigationItem" id="DZ1-QJ-ATs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
