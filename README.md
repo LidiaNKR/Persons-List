@@ -13,6 +13,6 @@ Persons List - приложение со списком рандомных ко�
 ![product-screenshot](Images/SectionsView.png)
 
 # Используемый стек технологий
-- Язык программирования - Swift
-- Интерфейс - UIKit (исп. TabBarController, TableViewController, NavigationController)
+- Язык программирования - `Swift`
+- Интерфейс - `UIKit` (исп. TabBarController, TableViewController, NavigationController)
 - iOS 14+
