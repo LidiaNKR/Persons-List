@@ -8,22 +8,23 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    
+    // MARK: - Public Properties
+    let persons = Person.getContactList()
 
+    // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupViewControllers(with: persons)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Privat Methods
+    private func setupViewControllers(with persons: [Person]) {
+        let personListVC = viewControllers?.first as! PersonListTableViewController
+        let sectionVC = viewControllers?.last as! SectionTableViewController
+        
+        personListVC.persons = persons
+        sectionVC.persons = persons
     }
-    */
-
 }
