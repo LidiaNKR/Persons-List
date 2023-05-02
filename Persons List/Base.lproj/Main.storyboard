@@ -28,7 +28,7 @@
         <!--Persons list-->
         <scene sceneID="Waa-lS-oVX">
             <objects>
-                <tabBarController id="dnG-Q3-Ga7" sceneMemberID="viewController">
+                <tabBarController id="dnG-Q3-Ga7" customClass="TabBarViewController" customModule="Persons_List" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Persons list" id="62w-gm-0Cg"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cVL-qs-b8y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="67" y="-345"/>
         </scene>
-        <!--Persons List-->
+        <!--Cell-->
         <scene sceneID="Ieh-48-lK3">
             <objects>
                 <tableViewController id="EJa-q5-BTK" customClass="PersonListTableViewController" customModule="Persons_List" sceneMemberID="viewController">
@@ -53,13 +53,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ljK-48-DXi">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ljK-48-DXi">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ljK-48-DXi" id="qjt-L1-1BL">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="DI1-zF-Irz" kind="show" trigger="accessoryAction" id="b2w-xz-7ax"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -68,11 +71,8 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Cell" image="person.circle" catalog="system" id="iAS-GS-qFT"/>
-                    <navigationItem key="navigationItem" title="Persons List" id="Xvx-1a-mTz"/>
+                    <navigationItem key="navigationItem" id="Xvx-1a-mTz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="DI1-zF-Irz" kind="show" identifier="cell" id="FLq-Q3-7Jw"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vi-Fv-yNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="1600.0000000000002" y="-599.33035714285711"/>
         </scene>
-        <!--Persons List-->
+        <!--Section-->
         <scene sceneID="cjf-sI-JwX">
             <objects>
                 <tableViewController id="w03-CS-Qc6" customClass="SectionTableViewController" customModule="Persons_List" sceneMemberID="viewController">
@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="C2o-3O-SQF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="Cell" id="C2o-3O-SQF">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C2o-3O-SQF" id="h0r-OY-Quk">
@@ -143,7 +143,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Section" image="person.circle" catalog="system" id="yp9-bj-ThX"/>
-                    <navigationItem key="navigationItem" title="Persons List" id="DZ1-QJ-ATs"/>
+                    <navigationItem key="navigationItem" id="DZ1-QJ-ATs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cki-jp-6Sg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
